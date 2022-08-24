@@ -67,6 +67,6 @@ int main(){
 }
 ```
 
-> Here Teach Method takes an argument of the Course, which is then used in to body of the method. If someone changes the getknowledge methjod of the Course Class, this code will break, It is called dependency.
+> Here teach() Method takes an argument of the Course, which is then used in to body of the method. If someone changes the getknowledge() method of the Course Class, this code will break, It is called dependency.
 Now look at the Student field, how this field being used in Professor class's teach method. This is also a dependency for Professor means if the method remember will change the Professor code will break, However Since the Student field always accessible to any method of the Professor, so The Student class is not just a dependency but also an association.
 
