@@ -15,10 +15,8 @@
 > Polymorphism, Every subclass needs to override base or super class method on its own
 and polymorphism provies us the ability to identify the real class of an object and calls its implementation even when its real type is unknown in the current context.
 
-
-> 
-
 - Relation between Objects:
+> ![Dependency](https://github.com/manojbaliyan16/DesignPatternCpp/blob/main/images/dependecy.jpeg)
 - Solid Design Pricinples:
 
 - Design Principles 
