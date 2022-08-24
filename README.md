@@ -15,8 +15,55 @@
 > Polymorphism, Every subclass needs to override base or super class method on its own
 and polymorphism provies us the ability to identify the real class of an object and calls its implementation even when its real type is unknown in the current context.
 
-- Relation between Objects:
-> ![Dependency](https://github.com/manojbaliyan16/DesignPatternCpp/blob/main/images/dependecy.png)
-- Solid Design Pricinples:
 
-- Design Principles 
+- Relation between Objects: 
+### Dependency:
+> ![Dependency](https://github.com/manojbaliyan16/DesignPatternCpp/blob/main/images/dependecy.png)
+> Here source class is called the client and the target class is called the supplier, if there is a change into behaviour or structure of the target, there might be changes into source. here cart is depends on the product, So both are said to be dependent.
+Below are a few reason listed by which dependency occur
+  (i) Specifying the types in method signature.
+  (ii) When instantiating object by constructor call.
+### Association:
+![Association](https://github.com/manojbaliyan16/DesignPatternCpp/blob/main/images/Association.png)
+```
+#include <iostream>
+using namespace std;
+
+class Cource {
+    public:
+    Cource(){}
+    Cource(Cource &c){}
+    bool getKnowledge(){
+        return true;
+    }
+};
+class Student{
+    Cource c;
+    public:
+    void remember(bool){
+    }
+    int x;
+};
+class Professor{
+     public:
+    Student  st;
+    void teach(Cource c){
+        cout << c.getKnowledge() << endl;
+         bool x=true;
+        st.remember(x);
+    }
+    
+};
+};
+
+int main(){
+    Professor p;
+    Cource c;
+    cout << "Hello Association and Dependency" << endl;
+    p.st.remember(c.getKnowledge());
+    return 0;
+}
+```
+> Here Teach Method takes an argument of the Course, which is then used in to body of the method. If someone changes the getknowledge methjod of the Course Class, this code will break, It is called dependency.
+Now look at the Student field, how this field being used in Professor class's teach method. This is also a dependency for Professor means if the method remember will change the Professor code will break, However Since the Student field always accessible to any method of the Professor, so The Student class is not just a dependency but also an association.
+
