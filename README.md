@@ -18,14 +18,22 @@ and polymorphism provies us the ability to identify the real class of an object 
 
 - Relation between Objects: 
 ### Dependency:
-> ![Dependency](https://github.com/manojbaliyan16/DesignPatternCpp/blob/main/images/dependecy.png)
+>    ![Dependency](https://github.com/manojbaliyan16/DesignPatternCpp/blob/main/images/dependecy.png)
 
 > Here source class is called the client and the target class is called the supplier, if there is a change into behaviour or structure of the target, there might be changes into source. here cart is depends on the product, So both are said to be dependent.
 Below are a few reason listed by which dependency occur
   (i) Specifying the types in method signature.
   (ii) When instantiating object by constructor call.
 ### Association:
-![Association](https://github.com/manojbaliyan16/DesignPatternCpp/blob/main/images/Association.png)
+   ![Association](https://github.com/manojbaliyan16/DesignPatternCpp/blob/main/images/Association.png)
+
+
+### Aggregation 
+   ![Aggregation](https://github.com/manojbaliyan16/DesignPatternCpp/blob/main/images/Aggregation.png)
+
+
+### Composition 
+   ![Composition](https://github.com/manojbaliyan16/DesignPatternCpp/blob/main/images/Composition.png)
 
 ```
 #include <iostream>
