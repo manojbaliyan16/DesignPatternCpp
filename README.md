@@ -34,7 +34,7 @@ using namespace std;
 class Cource {
     public:
     Cource(){}
-    Cource(Cource &c){}
+    Cource(const Cource &c){}
     bool getKnowledge(){
         return true;
     }
