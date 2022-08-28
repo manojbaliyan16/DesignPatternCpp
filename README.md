@@ -94,7 +94,7 @@ Now look at the Student field, how this field being used in Professor class's te
 > Class A defines the method declared in interface B. Object A can be treated as B; class A depends on B.
 
 ### Inheritance
-   ![Inheritance](https://github.com/manojbaliyan16/DesignPatternCpp/blob/main/images/inheritance.png)
+   ![Inheritance](https://github.com/manojbaliyan16/DesignPatternCpp/blob/main/images/Inheritance.png)
 
  Class A inherits interface and implementation of class B but can extend it. Objects A can be traeted as B. 
  class  A can be depends on B.
